@@ -1,0 +1,134 @@
+body{
+    font-family: 'Poppins', sans-serif;;
+    margin: 0;
+    box-sizing: border-box;
+   
+}
+
+/* CSS DE HEADER */
+header{
+    display: flex;
+    font-size: 15px;
+    background-color: #72b1a4;
+    padding: 25px;
+    justify-content: flex-end;
+
+}
+#search{    
+    border-radius: 50px;
+    background-color: #f5dd7e;
+    text-align: center;
+    width: 350px;
+    height: 30px;
+
+}
+
+#search::placeholder{
+    font-size: 17px;
+    color: rgb(22, 20, 20);
+}
+
+form i{
+    color: #F2B900;
+    cursor: pointer;
+}
+
+/* CSS DE MAIN */
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #abccb1;
+}
+.filme{
+    width: 250px;
+    margin: 2%;
+    border: 2px solid black;
+    height: 500px;
+    border-radius: 10px;
+    box-shadow: 2px 6px 12px black;
+    text-align: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    transition: 30ms ease-in-out;
+    background-color: #d4e2b6;
+   
+}
+
+.filme:hover{
+    transform: scale(1.1);
+    transition: 30ms ease-in-out;
+
+}
+
+.filme img{
+    width: 100%;
+    border-radius: 8px;
+}
+
+.info {
+    color: #2b5166;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 13px;
+    
+}
+
+.info span{
+    margin-top: 80px;
+}
+
+.descricao{    
+    position: absolute;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: rgb(230, 227, 105);
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transform: translateY(101%);
+    transition: 0.5s ease-in-out;
+}
+
+.filme:hover .descricao{
+    transform: translateY(0);  
+    transition: 0.5s ease-in-out;  
+      
+} 
+
+.descricao h3{
+    font-weight: lighter;
+    font-size: 15px;
+    top: 0;
+    color: #ece3c5;
+}
+
+.info span{
+    padding: 1px 3px;
+    border-radius: 3px;
+    font-weight: bold;
+    background-color: rgb(224, 223, 152);
+}
+
+
+
+/* MEDIA QUERIES */
+
+
+@media screen and (max-width:852px){
+    header{
+        display: flex;
+        justify-content: center;        
+    }     
+}
+
+@media screen and (max-width:420px) {
+    .fa-search{
+        display: none;
+    }
+    
+}
+
